@@ -1,0 +1,4 @@
+/**Add Shoes Size for Students**/
+ALTER TABLE  `student_details` ADD  `student_shoes_size` INT NOT NULL AFTER  `student_size`
+
+ALTER TABLE  `student_details` CHANGE  `student_shoes_size`  `student_shoes_size` VARCHAR( 15 ) NOT NULL
