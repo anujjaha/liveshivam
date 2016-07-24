@@ -53,7 +53,8 @@ function check()
         	<table align="center" border="2" width="100%">
             	<tr>
                 	<td width="10%">Roll Number</td>
-                    <td width="60%">Student Name</td>
+                    <td width="40%">Student Name</td>
+                    <td width="20%">Qty</td>
                     <td width="15%">Gender</td>
                     <td width="15%">Size</td>
                 </tr>

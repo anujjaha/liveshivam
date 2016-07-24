@@ -167,7 +167,8 @@ if(isset($_POST['chart'])) {
 					Roll No.</h3></td>
 					<td style='border:1px solid black;' width='40%'>
 					<h3>Name</h3></td><td style='border:1px solid black;' width='10%'>
-					<h3>Size</h3></td>
+					<h3>Size</h3></td><td style='border:1px solid black;' width='10%'>
+					<h3>Qty</h3></td>
 					<td style='border:1px solid black;' width='40%'>Remarks</td></tr>";
 	for($k=1;$k<13;$k++)
 	{ 
@@ -175,7 +176,7 @@ if(isset($_POST['chart'])) {
 			$maleA = 0;
 			$femaleA = 0;
 			echo "<table align='center' width='80%' border='2'>";
-			echo "<tr><td colspan='4' align='center'><h2>Standard : ".$k." - A</h2></td></tr>";
+			echo "<tr><td colspan='5' align='center'><h2>Standard : ".$k." - A</h2></td></tr>";
 			echo $header;
 			foreach($std[$k]["A"] as $myvalA) {
 				if($myvalA[5] == "Male")
@@ -190,12 +191,13 @@ if(isset($_POST['chart'])) {
 				echo "<td width='10%' style='border:1px solid black;'>".$myvalA[1]."</td>";
 				echo "<td width='40%' style='border:1px solid black;'>".ucfirst($myvalA[2])."</td>";
 				echo "<td width='10%' style='border:1px solid black;'>".$myvalA[6]."</td>";
+				echo "<td width='10%' style='border:1px solid black;'>".$myvalA[9]."</td>";
 				echo "<td width='40%' style='border:1px solid black;'>Category - ".$myvalA[5]."</td>";
 				echo "</tr>";
 			}
 			echo "<tr>";
 			echo "<td colspan='2'><h2>Boys :".$maleA."</h2></td>";
-			echo "<td colspan='2' align='right'><h2>Girls :".$femaleA."</h2></td>";
+			echo "<td colspan='3' align='right'><h2>Girls :".$femaleA."</h2></td>";
 			echo "</tr>";
 			echo "</table>";
 			echo "<p align='right'>Signature : __________________________</p>";
@@ -206,7 +208,7 @@ if(isset($_POST['chart'])) {
 			$maleB = 0;
 			$femaleB = 0;
 			echo "<table align='center' width='80%' border='2'>";
-			echo "<tr><td colspan='4' align='center'><h2>Standard : ".$k." - B</h2></td></tr>";
+			echo "<tr><td colspan='5' align='center'><h2>Standard : ".$k." - B</h2></td></tr>";
 			echo $header;
 			foreach($std[$k]["B"] as $myvalB) {
 				if($myvalB[5] == "Male")
@@ -221,12 +223,13 @@ if(isset($_POST['chart'])) {
 				echo "<td width='10%' style='border:1px solid black;'>".$myvalB[1]."</td>";
 				echo "<td width='40%' style='border:1px solid black;'>".ucfirst($myvalB[2])."</td>";
 				echo "<td width='10%' style='border:1px solid black;'>".$myvalB[6]."</td>";
+				echo "<td width='10%' style='border:1px solid black;'>".$myvalB[9]."</td>";
 				echo "<td width='40%' style='border:1px solid black;'>Category - ".$myvalB[5]."</td>";
 				echo "</tr>";
 			}
 			echo "<tr>";
 			echo "<td colspan='2'><h2>Boys :".$maleB."</h2></td>";
-			echo "<td colspan='2' align='right'><h2>Girls :".$femaleB."</h2></td>";
+			echo "<td colspan='3' align='right'><h2>Girls :".$femaleB."</h2></td>";
 			echo "</tr>";
 			echo "</table>";
 			echo "<p align='right'>Signature : __________________________</p>";
@@ -237,7 +240,7 @@ if(isset($_POST['chart'])) {
 			$maleC= 0;
 			$femaleC = 0;
 			echo "<table align='center' width='80%' border='2'>";
-			echo "<tr><td colspan='4' align='center'><h2>Standard : ".$k." - C</h2></td></tr>";
+			echo "<tr><td colspan='5' align='center'><h2>Standard : ".$k." - C</h2></td></tr>";
 			echo $header;
 			foreach($std[$k]["C"] as $myvalC) {
 				if($myvalC[5] == "Male")
@@ -252,12 +255,13 @@ if(isset($_POST['chart'])) {
 				echo "<td width='10%' style='border:1px solid black;'>".$myvalC[1]."</td>";
 				echo "<td width='40%' style='border:1px solid black;'>".ucfirst($myvalC[2])."</td>";
 				echo "<td width='10%' style='border:1px solid black;'>".$myvalC[6]."</td>";
+				echo "<td width='10%' style='border:1px solid black;'>".$myvalC[9]."</td>";
 				echo "<td width='40%' style='border:1px solid black;'>Category - ".$myvalC[5]."</td>";
 				echo "</tr>";
 			}
 			echo "<tr>";
 			echo "<td colspan='2'><h2>Boys :".$maleC."</h2></td>";
-			echo "<td colspan='2' align='right'><h2>Girls :".$femaleC."</h2></td>";
+			echo "<td colspan='3' align='right'><h2>Girls :".$femaleC."</h2></td>";
 			echo "</tr>";
 			echo "</table>";
 			echo "<p align='right'>Signature : __________________________</p>";
@@ -269,7 +273,7 @@ if(isset($_POST['chart'])) {
 			$maleD = 0;
 			$femaleD = 0;
 			echo "<table align='center' width='80%' border='2'>";
-			echo "<tr><td colspan='4' align='center'><h2>Standard : ".$k." - D</h2></td></tr>";
+			echo "<tr><td colspan='5' align='center'><h2>Standard : ".$k." - D</h2></td></tr>";
 			echo $header;
 			foreach($std[$k]["D"] as $myvalD) {
 				if($myvalD[5] == "Male")
@@ -284,12 +288,13 @@ if(isset($_POST['chart'])) {
 				echo "<td width='10%' style='border:1px solid black;'>".$myvalD[1]."</td>";
 				echo "<td width='40%' style='border:1px solid black;'>".ucfirst($myvalD[2])."</td>";
 				echo "<td width='10%' style='border:1px solid black;'>".$myvalD[6]."</td>";
+				echo "<td width='10%' style='border:1px solid black;'>".$myvalD[9]."</td>";
 				echo "<td width='40%' style='border:1px solid black;'>Category - ".$myvalD[5]."</td>";
 				echo "</tr>";
 			}
 			echo "<tr>";
 			echo "<td colspan='2'><h2>Boys :".$maleD."</h2></td>";
-			echo "<td colspan='2' align='right'><h2>Girls :".$femaleD."</h2></td>";
+			echo "<td colspan='3' align='right'><h2>Girls :".$femaleD."</h2></td>";
 			echo "</tr>";
 			echo "</table>";
 			echo "<p align='right'>Signature : __________________________</p>";
@@ -300,7 +305,7 @@ if(isset($_POST['chart'])) {
 			$maleE = 0;
 			$femaleE = 0;
 			echo "<table align='center' width='80%' border='2'>";
-			echo "<tr><td colspan='4' align='center'><h2>Standard : ".$k." - E</h2></td></tr>";
+			echo "<tr><td colspan='5' align='center'><h2>Standard : ".$k." - E</h2></td></tr>";
 			echo $header;
 			foreach($std[$k]["E"] as $myvalE) {
 				if($myvalE[5] == "Male")
@@ -315,12 +320,13 @@ if(isset($_POST['chart'])) {
 				echo "<td width='10%' style='border:1px solid black;'>".$myvalE[1]."</td>";
 				echo "<td width='40%' style='border:1px solid black;'>".ucfirst($myvalE[2])."</td>";
 				echo "<td width='10%' style='border:1px solid black;'>".$myvalE[6]."</td>";
+				echo "<td width='10%' style='border:1px solid black;'>".$myvalE[9]."</td>";
 				echo "<td width='40%' style='border:1px solid black;'>Category - ".$myvalE[5]."</td>";
 				echo "</tr>";
 			}
 			echo "<tr>";
 			echo "<td colspan='2'><h2>Boys :".$maleE."</h2></td>";
-			echo "<td colspan='2' align='right'><h2>Girls :".$femaleE."</h2></td>";
+			echo "<td colspan='3' align='right'><h2>Girls :".$femaleE."</h2></td>";
 			echo "</tr>";
 			echo "</table>";
 			echo "<p align='right'>Signature : __________________________</p>";

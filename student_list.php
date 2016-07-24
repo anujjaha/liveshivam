@@ -151,7 +151,7 @@ ob_start();
 				}
 				
              $stdOne .= "<strong> ".$category ."-"; 
-             $stdOne .= $value[6];
+             $stdOne .= $value[6]."/".$value[9];
              $stdOne .= "</strong></td>";
            
             if(($srOne%5)==0) {
@@ -176,7 +176,7 @@ ob_start();
 				}
 				
              $stdTwo .= "<strong> ".$category ."-"; 
-             $stdTwo .= $value[6];
+             $stdTwo .= $value[6]."/".$value[9];
              $stdTwo .= "</strong></td>";
            
             if(($srTwo%5)==0) {
@@ -202,7 +202,7 @@ ob_start();
 				}
 				
              $stdThree .= "<strong> ".$category ."-"; 
-             $stdThree .= $value[6];
+             $stdThree .= $value[6]."/".$value[9];
              $stdThree .= "</strong></td>";
            
             if(($srThree%5)==0) {
@@ -228,7 +228,7 @@ ob_start();
 				}
 				
              $stdFour .= "<strong> ".$category ."-"; 
-             $stdFour .= $value[6];
+             $stdFour .= $value[6]."/".$value[9];
              $stdFour .= "</strong></td>";
            
             if(($srFour%5)==0) {
@@ -255,7 +255,7 @@ ob_start();
 				}
 				
              $stdFive .= "<strong> ".$category ."-"; 
-             $stdFive .= $value[6];
+             $stdFive .= $value[6]."/".$value[9];
              $stdFive .= "</strong></td>";
            
             if(($srFive%5)==0) {
@@ -281,7 +281,7 @@ ob_start();
 				}
 				
              $stdSix .= "<strong> ".$category ."-"; 
-             $stdSix .= $value[6];
+             $stdSix .= $value[6]."/".$value[9];
              $stdSix .= "</strong></td>";
            
             if(($srSix%5)==0) {
@@ -307,7 +307,7 @@ ob_start();
 				}
 				
              $stdSeven .= "<strong> ".$category ."-"; 
-             $stdSeven .= $value[6];
+             $stdSeven .= $value[6]."/".$value[9];
              $stdSeven .= "</strong></td>";
            
             if(($srSeven%5)==0) {
@@ -333,7 +333,7 @@ ob_start();
 				}
 				
              $stdEight .= "<strong> ".$category ."-"; 
-             $stdEight .= $value[6];
+             $stdEight .= $value[6]."/".$value[9];
              $stdEight .= "</strong></td>";
            
             if(($srEight%5)==0) {
@@ -360,7 +360,7 @@ ob_start();
 				}
 				
              $stdNine .= "<strong> ".$category ."-"; 
-             $stdNine .= $value[6];
+             $stdNine .= $value[6]."/".$value[9];
              $stdNine .= "</strong></td>";
            
             if(($srNine%5)==0) {
@@ -387,7 +387,7 @@ ob_start();
 				}
 				
              $stdTen .= "<strong> ".$category ."-"; 
-             $stdTen .= $value[6];
+             $stdTen .= $value[6]."/".$value[9];
              $stdTen .= "</strong></td>";
            
             if(($srTen%5)==0) {
@@ -413,7 +413,7 @@ ob_start();
 				}
 				
              $stdEleven .= "<strong> ".$category ."-"; 
-             $stdEleven .= $value[6];
+             $stdEleven .= $value[6]."/".$value[9];
              $stdEleven .= "</strong></td>";
            
             if(($srEleven%5)==0) {
@@ -439,7 +439,7 @@ ob_start();
 				}
 				
              $stdTwelve .= "<strong> ".$category ."-"; 
-             $stdTwelve .= $value[6];
+             $stdTwelve .= $value[6]."/".$value[9];
              $stdTwelve .= "</strong></td>";
            
             if(($srTwelve%5)==0) {

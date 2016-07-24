@@ -21,6 +21,8 @@ for($i=1;$i<=$num_students;$i++)
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	<input type="text" name="student_name[<?php echo $i;?>]" />
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="number" min="1" max="10" value="1"  name="student_qty[<?php echo $i;?>]" />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	<select name="student_gender[<?php echo $i;?>]">
                             <option value="Male"> Boy </option>
                             <option value="Female"> Girl </option>

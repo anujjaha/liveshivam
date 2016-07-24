@@ -191,7 +191,7 @@ class master {
 			$data[] = array($row['id'],$row['student_sr'],$row['student_name'],
 							$row['student_class'],$row['student_division'],
 							$row['student_gender'],$row['student_size'],
-							$row['student_term'],$row['student_status']
+							$row['student_term'],$row['student_status'],$row['student_qty']
 							);
 		}
 		return $data;
@@ -212,7 +212,7 @@ class master {
 			$data[] = array($row['id'],$row['student_sr'],$row['student_name'],
 							$row['student_class'],$row['student_division'],
 							$row['student_gender'],$row['student_size'],
-							$row['student_term'],$row['student_status']
+							$row['student_term'],$row['student_status'],$row['student_qty']
 							);
 		}
 		return $data;

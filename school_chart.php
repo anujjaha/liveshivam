@@ -80,6 +80,10 @@ if(isset($_POST['chart']))
 	$student_term = $_POST['term'];
 	$school_id = $obj->getSchoolIdByName($school_name);
 	$student_data = $obj->getStudentBySchoolIdCondition($school_id,$student_term);
+	
+	/*echo "<pre>";
+	print_r($student_data);die;*/
+	
 	$sizeData = array("Pent - Size","24","26","28","30","32","34","36","38","40","42","44");
 	$m22countStd1 = 0;
 	
@@ -92,46 +96,57 @@ if(isset($_POST['chart']))
 			 if($value[6] == "24")
 			{
 				$stdOne['24'][] = array($value[6]);
+				$stdOneQty['24'] = $stdOneQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
 				$stdOne['26'][] = array($value[6]);
+				$stdOneQty['26'] = $stdOneQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
 				$stdOne['28'][] = array($value[6]);
+				$stdOneQty['28'] = $stdOneQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
 				$stdOne['30'][] = array($value[6]);
+				$stdOneQty['30'] = $stdOneQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
 				$stdOne['32'][] = array($value[6]);
+				$stdOneQty['32'] = $stdOneQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
 				$stdOne['34'][] = array($value[6]);
+				$stdOneQty['34'] = $stdOneQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
 				$stdOne['36'][] = array($value[6]);
+				$stdOneQty['36'] = $stdOneQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
 				$stdOne['38'][] = array($value[6]);
+				$stdOneQty['38'] = $stdOneQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
 				$stdOne['40'][] = array($value[6]);
+				$stdOneQty['40'] = $stdOneQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
 				$stdOne['42'][] = array($value[6]);
+				$stdOneQty['42'] = $stdOneQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
 				$stdOne['44'][] = array($value[6]);
+				$stdOneQty['44'] = $stdOneQty['44'] + $value[9];
 			}
 		}
 		
@@ -139,46 +154,57 @@ if(isset($_POST['chart']))
 			 if($value[6] == "24")
 			{
 				$stdTwo['24'][] = array($value[6]);
+				$stdTwoQty['24'] = $stdTwoQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
 				$stdTwo['26'][] = array($value[6]);
+				$stdTwoQty['26'] = $stdTwoQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
 				$stdTwo['28'][] = array($value[6]);
+				$stdTwoQty['28'] = $stdTwoQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
 				$stdTwo['30'][] = array($value[6]);
+				$stdTwoQty['30'] = $stdTwoQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
 				$stdTwo['32'][] = array($value[6]);
+				$stdTwoQty['32'] = $stdTwoQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
 				$stdTwo['34'][] = array($value[6]);
+				$stdTwoQty['34'] = $stdTwoQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
 				$stdTwo['36'][] = array($value[6]);
+				$stdTwoQty['36'] = $stdTwoQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
 				$stdTwo['38'][] = array($value[6]);
+				$stdTwoQty['38'] = $stdTwoQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
 				$stdTwo['40'][] = array($value[6]);
+				$stdTwoQty['40'] = $stdTwoQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
 				$stdTwo['42'][] = array($value[6]);
+				$stdTwoQty['42'] = $stdTwoQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
 				$stdTwo['44'][] = array($value[6]);
+				$stdTwoQty['44'] = $stdTwoQty['44'] + $value[9];
 			}
 				
 		}
@@ -188,46 +214,51 @@ if(isset($_POST['chart']))
 			 if($value[6] == "24")
 			{
 				$stdThree['24'][] = array($value[6]);
+				$stdThreeQty['24'] = $stdThreeQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
 				$stdThree['26'][] = array($value[6]);
+				$stdThreeQty['26'] = $stdThreeQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
 				$stdThree['28'][] = array($value[6]);
+				$stdThreeQty['28'] = $stdThreeQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
 				$stdThree['30'][] = array($value[6]);
+				$stdThreeQty['30'] = $stdThreeQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
 				$stdThree['32'][] = array($value[6]);
+				$stdThreeQty['32'] = $stdThreeQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$stdThree['34'][] = array($value[6]);
+				$stdThreeQty['34'] = $stdThreeQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$stdThree['36'][] = array($value[6]);
+				$stdThreeQty['36'] = $stdThreeQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$stdThree['38'][] = array($value[6]);
+				$stdThreeQty['38'] = $stdThreeQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$stdThree['40'][] = array($value[6]);
+				$stdThreeQty['40'] = $stdThreeQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$stdThree['42'][] = array($value[6]);
+				$stdThreeQty['42'] = $stdThreeQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$stdThree['44'][] = array($value[6]);
+				$stdThreeQty['44'] = $stdThreeQty['44'] + $value[9];
 			}
 
 		}
@@ -236,47 +267,47 @@ if(isset($_POST['chart']))
 			
 			if($value[6] == "24")
 			{
-				$stdFour['24'][] = array($value[6]);
+				$stdFour['24'] = $stdFour['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$stdFour['26'][] = array($value[6]);
+				$stdFour['26'] = $stdFour['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$stdFour['28'][] = array($value[6]);
+				$stdFour['28'] = $stdFour['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$stdFour['30'][] = array($value[6]);
+				$stdFour['30'] = $stdFour['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$stdFour['32'][] = array($value[6]);
+				$stdFour['32'] = $stdFour['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$stdFour['34'][] = array($value[6]);
+				$stdFour['34'] = $stdFour['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$stdFour['36'][] = array($value[6]);
+				$stdFour['36'] = $stdFour['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$stdFour['38'][] = array($value[6]);
+				$stdFour['38'] = $stdFour['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$stdFour['40'][] = array($value[6]);
+				$stdFour['40'] = $stdFour['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$stdFour['42'][] = array($value[6]);
+				$stdFour['42'] = $stdFour['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$stdFour['44'][] = array($value[6]);
+				$stdFour['44'] = $stdFour['44'] + $value[9];
 			}
 		}
 		
@@ -284,47 +315,47 @@ if(isset($_POST['chart']))
 		
 			if($value[6] == "24")
 			{
-				$stdFive['24'][] = array($value[6]);
+				$stdFiveQty['24'] = $stdFiveQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$stdFive['26'][] = array($value[6]);
+				$stdFiveQty['26'] = $stdFiveQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$stdFive['28'][] = array($value[6]);
+				$stdFiveQty['28'] = $stdFiveQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$stdFive['30'][] = array($value[6]);
+				$stdFiveQty['30'] = $stdFiveQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$stdFive['32'][] = array($value[6]);
+				$stdFiveQty['32'] = $stdFiveQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$stdFive['34'][] = array($value[6]);
+				$stdFiveQty['34'] = $stdFiveQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$stdFive['36'][] = array($value[6]);
+				$stdFiveQty['36'] = $stdFiveQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$stdFive['38'][] = array($value[6]);
+				$stdFiveQty['38'] = $stdFiveQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$stdFive['40'][] = array($value[6]);
+				$stdFiveQty['40'] = $stdFiveQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$stdFive['42'][] = array($value[6]);
+				$stdFiveQty['42'] = $stdFiveQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$stdFive['44'][] = array($value[6]);
+				$stdFiveQty['44'] = $stdFiveQty['44'] + $value[9];
 			}
 		}
 		
@@ -332,47 +363,47 @@ if(isset($_POST['chart']))
 
 			 if($value[6] == "24")
 			{
-				$stdSix['24'][] = array($value[6]);
+				$stdSixQty['24'] = $stdSixQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$stdSix['26'][] = array($value[6]);
+				$stdSixQty['26'] = $stdSixQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$stdSix['28'][] = array($value[6]);
+				$stdSixQty['28'] = $stdSixQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$stdSix['30'][] = array($value[6]);
+				$stdSixQty['30'] = $stdSixQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$stdSix['32'][] = array($value[6]);
+				$stdSixQty['32'] = $stdSixQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$stdSix['34'][] = array($value[6]);
+				$stdSixQty['34'] = $stdSixQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$stdSix['36'][] = array($value[6]);
+				$stdSixQty['36'] = $stdSixQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$stdSix['38'][] = array($value[6]);
+				$stdSixQty['38'] = $stdSixQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$stdSix['40'][] = array($value[6]);
+				$stdSixQty['40'] = $stdSixQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$stdSix['42'][] = array($value[6]);
+				$stdSixQty['42'] = $stdSixQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$stdSix['44'][] = array($value[6]);
+				$stdSixQty['44'] = $stdSixQty['44'] + $value[9];
 			}
 
 		}
@@ -381,47 +412,47 @@ if(isset($_POST['chart']))
 		
 			 if($value[6] == "24")
 			{
-				$stdSeven['24'][] = array($value[6]);
+				$stdSevenQty['24'] = $stdSevenQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$stdSeven['26'][] = array($value[6]);
+				$stdSevenQty['26'] = $stdSevenQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$stdSeven['28'][] = array($value[6]);
+				$stdSevenQty['28'] = $stdSevenQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$stdSeven['30'][] = array($value[6]);
+				$stdSevenQty['30'] = $stdSevenQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$stdSeven['32'][] = array($value[6]);
+				$stdSevenQty['32'] = $stdSevenQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$stdSeven['34'][] = array($value[6]);
+				$stdSevenQty['34'] = $stdSevenQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$stdSeven['36'][] = array($value[6]);
+				$stdSevenQty['36'] = $stdSevenQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$stdSeven['38'][] = array($value[6]);
+				$stdSevenQty['38'] = $stdSevenQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$stdSeven['40'][] = array($value[6]);
+				$stdSevenQty['40'] = $stdSevenQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$stdSeven['42'][] = array($value[6]);
+				$stdSevenQty['42'] = $stdSevenQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$stdSeven['44'][] = array($value[6]);
+				$stdSevenQty['44'] = $stdSevenQty['44'] + $value[9];
 			}
 
 		}
@@ -430,238 +461,247 @@ if(isset($_POST['chart']))
 			
 			 if($value[6] == "24")
 			{
-				$stdEight['24'][] = array($value[6]);
+				$stdEightQty['24'] = $stdEightQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$stdEight['26'][] = array($value[6]);
+				$stdEightQty['26'] = $stdEightQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$stdEight['28'][] = array($value[6]);
+				$stdEightQty['28'] = $stdEightQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$stdEight['30'][] = array($value[6]);
+				$stdEightQty['30'] = $stdEightQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$stdEight['32'][] = array($value[6]);
+				$stdEightQty['32'] = $stdEightQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$stdEight['34'][] = array($value[6]);
+				$stdEightQty['34'] = $stdEightQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$stdEight['36'][] = array($value[6]);
+				$stdEightQty['36'] = $stdEightQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$stdEight['38'][] = array($value[6]);
+				$stdEightQty['38'] = $stdEightQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$stdEight['40'][] = array($value[6]);
+				$stdEightQty['40'] = $stdEightQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$stdEight['42'][] = array($value[6]);
+				$stdEightQty['42'] = $stdEightQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$stdEight['44'][] = array($value[6]);
+				$stdEightQty['44'] = $stdEightQty['44'] + $value[9];
 			}
 		}
 		
 		if($value[3] == "9" and $value[5] == "Male") {
 			 if($value[6] == "24")
 			{
-				$stdNine['24'][] = array($value[6]);
+				$stdNineQty['24'] = $stdNineQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$stdNine['26'][] = array($value[6]);
+				$stdNineQty['26'] = $stdNineQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$stdNine['28'][] = array($value[6]);
+				$stdNineQty['28'] = $stdNineQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$stdNine['30'][] = array($value[6]);
+				$stdNineQty['30'] = $stdNineQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$stdNine['32'][] = array($value[6]);
+				$stdNineQty['32'] = $stdNineQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$stdNine['34'][] = array($value[6]);
+				$stdNineQty['34'] = $stdNineQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$stdNine['36'][] = array($value[6]);
+				$stdNineQty['36'] = $stdNineQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$stdNine['38'][] = array($value[6]);
+				$stdNineQty['38'] = $stdNineQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$stdNine['40'][] = array($value[6]);
+				$stdNineQty['40'] = $stdNineQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$stdNine['42'][] = array($value[6]);
+				$stdNineQty['42'] = $stdNineQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$stdNine['44'][] = array($value[6]);
+				$stdNineQty['44'] = $stdNineQty['44'] + $value[9];
 			}
 		}
 		
 		if($value[3] == "10" and $value[5] == "Male") {
 			 if($value[6] == "24")
 			{
-				$stdTen['24'][] = array($value[6]);
+				$stdTenQty['24'] = $stdTenQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$stdTen['26'][] = array($value[6]);
+				$stdTenQty['26'] = $stdTenQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$stdTen['28'][] = array($value[6]);
+				$stdTenQty['28'] = $stdTenQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$stdTen['30'][] = array($value[6]);
+				$stdTenQty['30'] = $stdTenQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$stdTen['32'][] = array($value[6]);
+				$stdTenQty['32'] = $stdTenQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$stdTen['34'][] = array($value[6]);
+				$stdTenQty['34'] = $stdTenQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$stdTen['36'][] = array($value[6]);
+				$stdTenQty['36'] = $stdTenQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$stdTen['38'][] = array($value[6]);
+				$stdTenQty['38'] = $stdTenQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$stdTen['40'][] = array($value[6]);
+				$stdTenQty['40'] = $stdTenQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$stdTen['42'][] = array($value[6]);
+				$stdTenQty['42'] = $stdTenQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$stdTen['44'][] = array($value[6]);
+				$stdTenQty['44'] = $stdTenQty['44'] + $value[9];
 			}
 		}
 		
 		if($value[3] == "11" and $value[5] == "Male") {
 			 if($value[6] == "24")
 			{
-				$stdEleven['24'][] = array($value[6]);
+				$stdElevenQty['24'] = $stdElevenQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$stdEleven['26'][] = array($value[6]);
+				$stdElevenQty['26'] = $stdElevenQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$stdEleven['28'][] = array($value[6]);
+				$stdElevenQty['28'] = $stdElevenQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$stdEleven['30'][] = array($value[6]);
+				$stdElevenQty['30'] = $stdElevenQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$stdEleven['32'][] = array($value[6]);
+				$stdElevenQty['32'] = $stdElevenQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$stdEleven['34'][] = array($value[6]);
+				$stdElevenQty['34'] = $stdElevenQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$stdEleven['36'][] = array($value[6]);
+				$stdElevenQty['36'] = $stdElevenQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$stdEleven['38'][] = array($value[6]);
+				$stdElevenQty['38'] = $stdElevenQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$stdEleven['40'][] = array($value[6]);
+				$stdElevenQty['40'] = $stdElevenQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$stdEleven['42'][] = array($value[6]);
+				$stdElevenQty['42'] = $stdElevenQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$stdEleven['44'][] = array($value[6]);
+				$stdElevenQty['44'] = $stdElevenQty['44'] + $value[9];
 			}
 		}
 		
 		if($value[3] == "12" and $value[5] == "Male") {
 			 if($value[6] == "24")
 			{
-				$stdTwelve['24'][] = array($value[6]);
+				$stdTwelveQty['24'] = $stdTwelveQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$stdTwelve['26'][] = array($value[6]);
+				$stdTwelveQty['26'] = $stdTwelveQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$stdTwelve['28'][] = array($value[6]);
+				$stdTwelveQty['28'] = $stdTwelveQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$stdTwelve['30'][] = array($value[6]);
+				$stdTwelveQty['30'] = $stdTwelveQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$stdTwelve['32'][] = array($value[6]);
+				$stdTwelveQty['32'] = $stdTwelveQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$stdTwelve['34'][] = array($value[6]);
+				$stdTwelveQty['34'] = $stdTwelveQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$stdTwelve['36'][] = array($value[6]);
+				$stdTwelveQty['36'] = $stdTwelveQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$stdTwelve['38'][] = array($value[6]);
+				$stdTwelveQty['38'] = $stdTwelveQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$stdTwelve['40'][] = array($value[6]);
+				$stdTwelveQty['40'] = $stdTwelveQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$stdTwelve['42'][] = array($value[6]);
+				$stdTwelveQty['42'] = $stdTwelveQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$stdTwelve['44'][] = array($value[6]);
+				$stdTwelveQty['44'] = $stdTwelveQty['44'] + $value[9];
 			}
 		}
 	}
+	
+	/*echo "<pre>";
+	print_r($stdOneQty);
+	print_r($stdTwoQty);
+	echo array_sum($stdOneQty['24']);
+	
+	echo "-----------";
+	print_r($stdOne);
+	die;*/
 ?>
 
 <?php
@@ -673,35 +713,39 @@ if(isset($_POST['chart']))
 	$s30 = 0;
 	$s32 = 0;
 	$shirttotal  = 0;
+	
 	foreach($shirt as  $shirtvalue) {
 	if($shirtvalue[6] > 22 ) {
 		if($shirtvalue[6] == 24 or $shirtvalue[6] == 26 ) {
-			$s20++;
-			$shirttotal++;
+			$s20 = $s20 + $shirtvalue[9];
+			$shirttotal = $shirttotal + $shirtvalue[9];
 		}
 		else if($shirtvalue[6] == 28  ) {
-			$s22++;
-			$shirttotal++;
+			$s22 = $s22 + $shirtvalue[9];
+			$shirttotal = $shirttotal + $shirtvalue[9];
+			
 		}
 		else if($shirtvalue[6] == 30) {
-			$s24++;
-			$shirttotal++;
+			$s24 = $s24 + $shirtvalue[9];
+			$shirttotal = $shirttotal + $shirtvalue[9];
+			
 		}
 		else if($shirtvalue[6] == 32 or $shirtvalue[6] == 34 ) {
-			$s26++;
-			$shirttotal++;
+			$s26 = $s26 + $shirtvalue[9];
+			$shirttotal = $shirttotal + $shirtvalue[9];
+			
 		}
 		else if($shirtvalue[6] == 36 ) {
-			$s28++;
-			$shirttotal++;
+			$s28 = $s28 + $shirtvalue[9];
+			$shirttotal = $shirttotal + $shirtvalue[9];
 		}
 		else if($shirtvalue[6] == 38 ) {
-			$s30++;
-			$shirttotal++;
+			$s30 = $s30 + $shirtvalue[9];
+			$shirttotal = $shirttotal + $shirtvalue[9];
 		}
 		else {
-			$s32++;
-			$shirttotal++;
+			$s32 = $s32 + $shirtvalue[9];
+			$shirttotal = $shirttotal + $shirtvalue[9];
 		}
 		}
 	}
@@ -745,93 +789,98 @@ ob_start();
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'><h3>Std-12</h3></td>";
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'><h3>Total</h3></td>";
 		}
-		else{
-		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$countOne = count($stdOne[$sizeData[$sr]]);
-		if($countOne > 0) { 
-		echo $countOne;
-		$msize22 = $msize22 + $countOne; 
-		}
-		 else { echo "-";}
-		echo "</td>";
+		else
+		{
+			echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
+			$countOne =  $stdOneQty[$sizeData[$sr]];
+			if($countOne > 0)
+			{ 
+				echo $stdOneQty[$sizeData[$sr]];
+				$msize22 = $msize22 + $stdOneQty[$sizeData[$sr]];
+			}
+			else
+			{
+				 echo "-";
+			}
+			echo "</td>";
 		
-		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$countTwo = count($stdTwo[$sizeData[$sr]]);
-		if($countTwo > 0) { echo $countTwo;
-		$msize24 = $msize24 + $countTwo; 
-		} else { echo "-";}
-		echo "</td>";
-		
-		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$countThree = count($stdThree[$sizeData[$sr]]);
-		if($countThree > 0) { echo $countThree;
-		$msize26 = $msize26 + $countThree; 
-		} else { echo "-";}
-		echo "</td>";
-		
-		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$countFour = count($stdFour[$sizeData[$sr]]);
-		if($countFour > 0) { echo $countFour;
-		$msize28 = $msize28 + $countFour; 
-		} else { echo "-";}
-		echo "</td class='show_chart'>";
+			echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
+				$countTwo = $stdTwoQty[$sizeData[$sr]];
+				if($countTwo > 0) { echo $countTwo;
+					$msize24 = $msize24 + $countTwo; 
+				} else { echo "-";}
+			echo "</td>";
+			
+			echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
+			$countThree = $stdThreeQty[$sizeData[$sr]];
+			if($countThree > 0) { echo $countThree;
+			$msize26 = $msize26 + $countThree; 
+			} else { echo "-";}
+			echo "</td>";
+			
+			echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
+			$countFour = $stdFourQty[$sizeData[$sr]];
+			if($countFour > 0) { echo $countFour;
+			$msize28 = $msize28 + $countFour; 
+			} else { echo "-";}
+			echo "</td class='show_chart'>";
 
-		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$countFive = count($stdFive[$sizeData[$sr]]);
-		if($countFive > 0) { echo $countFive;
-		$msize30 = $msize30 + $countFive;
-		} else { echo "-";}
-		echo "</td>";
-		
-		
-		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$countSix = count($stdSix[$sizeData[$sr]]);
-		if($countSix > 0) { echo $countSix;
-		$msize32 = $msize32 + $countSix;
-		} else { echo "-";}
-		echo "</td>";
+			echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
+			$countFive = $stdFiveQty[$sizeData[$sr]];
+			if($countFive > 0) { echo $countFive;
+			$msize30 = $msize30 + $countFive;
+			} else { echo "-";}
+			echo "</td>";
+			
+			
+			echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
+			$countSix = $stdSixQty[$sizeData[$sr]];
+			if($countSix > 0) { echo $countSix;
+			$msize32 = $msize32 + $countSix;
+			} else { echo "-";}
+			echo "</td>";
 
-		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$countSeven = count($stdSeven[$sizeData[$sr]]);
-		if($countSeven > 0) { echo $countSeven;
-		$msize34 = $msize34 + $countSeven;
-		} else { echo "-";}
-		echo "</td>";
-		
-		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$countEight = count($stdEight[$sizeData[$sr]]);
-		if($countEight > 0) { echo $countEight;
-		$msize36 = $msize36 + $countEight;
-		} else { echo "-";}
-		echo "</td>";
-		
-		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$countNine = count($stdNine[$sizeData[$sr]]);
-		if($countNine > 0) { echo $countNine;
-		$msize38 = $msize38 + $countNine;
-		} else { echo "-";}
-		echo "</td>";
-		
-		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$countTen = count($stdTen[$sizeData[$sr]]);
-		if($countTen > 0) { echo $countTen;
-		$msize40 = $msize40 + $countTen;
-		} else { echo "-";}
-		echo "</td>";
-		
-		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$countEleven = count($stdEleven[$sizeData[$sr]]);
-		if($countEleven > 0) { echo $countEleven;
-		$msize42 = $msize42 + $countEleven;
-		} else { echo "-";}
-		echo "</td>";
-		
-		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$countTwelve = count($stdTwelve[$sizeData[$sr]]);
-		if($countTwelve > 0) { echo $countTwelve;
-		$msize44 = $msize44 + $countTwelve;
-		} else { echo "-";}
-		echo "</td>";
+			echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
+			$countSeven = $stdSevenQty[$sizeData[$sr]];
+			if($countSeven > 0) { echo $countSeven;
+			$msize34 = $msize34 + $countSeven;
+			} else { echo "-";}
+			echo "</td>";
+			
+			echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
+			$countEight = $stdEightQty[$sizeData[$sr]];
+			if($countEight > 0) { echo $countEight;
+			$msize36 = $msize36 + $countEight;
+			} else { echo "-";}
+			echo "</td>";
+			
+			echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
+			$countNine = $stdNineQty[$sizeData[$sr]];
+			if($countNine > 0) { echo $countNine;
+			$msize38 = $msize38 + $countNine;
+			} else { echo "-";}
+			echo "</td>";
+			
+			echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
+			$countTen = $stdTenQty[$sizeData[$sr]];
+			if($countTen > 0) { echo $countTen;
+			$msize40 = $msize40 + $countTen;
+			} else { echo "-";}
+			echo "</td>";
+			
+			echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
+			$countEleven = $stdElevenQty[$sizeData[$sr]];
+			if($countEleven > 0) { echo $countEleven;
+			$msize42 = $msize42 + $countEleven;
+			} else { echo "-";}
+			echo "</td>";
+			
+			echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
+			$countTwelve = $stdTwelveQty[$sizeData[$sr]];
+			if($countTwelve > 0) { echo $countTwelve;
+			$msize44 = $msize44 + $countTwelve;
+			} else { echo "-";}
+			echo "</td>";
 		
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
 		//echo "---Total--";
@@ -845,6 +894,7 @@ ob_start();
 		echo "</tr>";
 	$sr++;
 	}
+	
 	?>
     <tr>
 	<td class='show_chart' align='center' style='border:1px solid black;'>
@@ -894,6 +944,8 @@ ob_start();
          </td>
     </tr>
 </table>
+
+<!------------------Completed one Section  ------------------------>
 <table align="center" border="2" style="border:thick; border-width:medium;">
 		<tr>
         	<td colspan="8" align="center"  style="border:1px solid black;">
@@ -974,143 +1026,143 @@ ob_start();
 		if($value[3] == "1" and $value[5] == "Female") {
 			if($value[6] == "24")
 			{
-				$FstdOne['24'][] = array($value[6]);
+				$FstdOneQty['24'] = $FstdOneQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$FstdOne['26'][] = array($value[6]);
+				$FstdOneQty['26'] = $FstdOneQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$FstdOne['28'][] = array($value[6]);
+				$FstdOneQty['28'] = $FstdOneQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$FstdOne['30'][] = array($value[6]);
+				$FstdOneQty['30'] = $FstdOneQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$FstdOne['32'][] = array($value[6]);
+				$FstdOneQty['32'] = $FstdOneQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$FstdOne['34'][] = array($value[6]);
+				$FstdOneQty['34'] = $FstdOneQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$FstdOne['36'][] = array($value[6]);
+				$FstdOneQty['36'] = $FstdOneQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$FstdOne['38'][] = array($value[6]);
+				$FstdOneQty['38'] = $FstdOneQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$FstdOne['40'][] = array($value[6]);
+				$FstdOneQty['40'] = $FstdOneQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$FstdOne['42'][] = array($value[6]);
+				$FstdOneQty['42'] = $FstdOneQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$FstdOne['44'][] = array($value[6]);
+				$FstdOneQty['44'] = $FstdOneQty['44'] + $value[9];
 			}
 		}
 		
 		if($value[3] == "2" and $value[5] == "Female") {
 			if($value[6] == "24")
 			{
-				$FstdTwo['24'][] = array($value[6]);
+				$FstdTwoQty['24'] = $FstdTwoQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$FstdTwo['26'][] = array($value[6]);
+				$FstdTwoQty['26'] = $FstdTwoQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$FstdTwo['28'][] = array($value[6]);
+				$FstdTwoQty['28'] = $FstdTwoQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$FstdTwo['30'][] = array($value[6]);
+				$FstdTwoQty['30'] = $FstdTwoQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$FstdTwo['32'][] = array($value[6]);
+				$FstdTwoQty['32'] = $FstdTwoQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$FstdTwo['34'][] = array($value[6]);
+				$FstdTwoQty['34'] = $FstdTwoQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$FstdTwo['36'][] = array($value[6]);
+				$FstdTwoQty['36'] = $FstdTwoQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$FstdTwo['38'][] = array($value[6]);
+				$FstdTwoQty['38'] = $FstdTwoQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$FstdTwo['40'][] = array($value[6]);
+				$FstdTwoQty['40'] = $FstdTwoQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$FstdTwo['42'][] = array($value[6]);
+				$FstdTwoQty['42'] = $FstdTwoQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$FstdTwo['44'][] = array($value[6]);
+				$FstdTwoQty['44'] = $FstdTwoQty['44'] + $value[9];
 			}
 				
 		}
 		
 		if($value[3] == "3" and $value[5] == "Female") {
 
-			 if($value[6] == "24")
+			if($value[6] == "24")
 			{
-				$FstdThree['24'][] = array($value[6]);
+				$FstdThreeQty['24'] = $FstdThreeQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$FstdThree['26'][] = array($value[6]);
+				$FstdThreeQty['26'] = $FstdThreeQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$FstdThree['28'][] = array($value[6]);
+				$FstdThreeQty['28'] = $FstdThreeQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$FstdThree['30'][] = array($value[6]);
+				$FstdThreeQty['30'] = $FstdThreeQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$FstdThree['32'][] = array($value[6]);
+				$FstdThreeQty['32'] = $FstdThreeQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$FstdThree['34'][] = array($value[6]);
+				$FstdThreeQty['34'] = $FstdThreeQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$FstdThree['36'][] = array($value[6]);
+				$FstdThreeQty['36'] = $FstdThreeQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$FstdThree['38'][] = array($value[6]);
+				$FstdThreeQty['38'] = $FstdThreeQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$FstdThree['40'][] = array($value[6]);
+				$FstdThreeQty['40'] = $FstdThreeQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$FstdThree['42'][] = array($value[6]);
+				$FstdThreeQty['42'] = $FstdThreeQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$FstdThree['44'][] = array($value[6]);
+				$FstdThreeQty['44'] = $FstdThreeQty['44'] + $value[9];
 			}
 
 		}
@@ -1119,47 +1171,47 @@ ob_start();
 			
 			 if($value[6] == "24")
 			{
-				$FstdFour['24'][] = array($value[6]);
+				$FstdFourQty['24'] = $FstdFourQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$FstdFour['26'][] = array($value[6]);
+				$FstdFourQty['26'] = $FstdFourQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$FstdFour['28'][] = array($value[6]);
+				$FstdFourQty['28'] = $FstdFourQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$FstdFour['30'][] = array($value[6]);
+				$FstdFourQty['30'] = $FstdFourQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$FstdFour['32'][] = array($value[6]);
+				$FstdFourQty['32'] = $FstdFourQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$FstdFour['34'][] = array($value[6]);
+				$FstdFourQty['34'] = $FstdFourQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$FstdFour['36'][] = array($value[6]);
+				$FstdFourQty['36'] = $FstdFourQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$FstdFour['38'][] = array($value[6]);
+				$FstdFourQty['38'] = $FstdFourQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$FstdFour['40'][] = array($value[6]);
+				$FstdFourQty['40'] = $FstdFourQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$FstdFour['42'][] = array($value[6]);
+				$FstdFourQty['42'] = $FstdFourQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$FstdFour['44'][] = array($value[6]);
+				$FstdFourQty['44'] = $FstdFourQty['44'] + $value[9];
 			}
 		}
 		
@@ -1167,47 +1219,47 @@ ob_start();
 		
 			 if($value[6] == "24")
 			{
-				$FstdFive['24'][] = array($value[6]);
+				$FstdFiveQty['24'] = $FstdFiveQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$FstdFive['26'][] = array($value[6]);
+				$FstdFiveQty['26'] = $FstdFiveQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$FstdFive['28'][] = array($value[6]);
+				$FstdFiveQty['28'] = $FstdFiveQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$FstdFive['30'][] = array($value[6]);
+				$FstdFiveQty['30'] = $FstdFiveQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$FstdFive['32'][] = array($value[6]);
+				$FstdFiveQty['32'] = $FstdFiveQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$FstdFive['34'][] = array($value[6]);
+				$FstdFiveQty['34'] = $FstdFiveQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$FstdFive['36'][] = array($value[6]);
+				$FstdFiveQty['36'] = $FstdFiveQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$FstdFive['38'][] = array($value[6]);
+				$FstdFiveQty['38'] = $FstdFiveQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$FstdFive['40'][] = array($value[6]);
+				$FstdFiveQty['40'] = $FstdFiveQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$FstdFive['42'][] = array($value[6]);
+				$FstdFiveQty['42'] = $FstdFiveQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$FstdFive['44'][] = array($value[6]);
+				$FstdFiveQty['44'] = $FstdFiveQty['44'] + $value[9];
 			}
 		}
 		
@@ -1215,47 +1267,47 @@ ob_start();
 
 			 if($value[6] == "24")
 			{
-				$FstdSix['24'][] = array($value[6]);
+				$FstdSixQty['24'] = $FstdSixQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$FstdSix['26'][] = array($value[6]);
+				$FstdSixQty['26'] = $FstdSixQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$FstdSix['28'][] = array($value[6]);
+				$FstdSixQty['28'] = $FstdSixQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$FstdSix['30'][] = array($value[6]);
+				$FstdSixQty['30'] = $FstdSixQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$FstdSix['32'][] = array($value[6]);
+				$FstdSixQty['32'] = $FstdSixQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$FstdSix['34'][] = array($value[6]);
+				$FstdSixQty['34'] = $FstdSixQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$FstdSix['36'][] = array($value[6]);
+				$FstdSixQty['36'] = $FstdSixQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$FstdSix['38'][] = array($value[6]);
+				$FstdSixQty['38'] = $FstdSixQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$FstdSix['40'][] = array($value[6]);
+				$FstdSixQty['40'] = $FstdSixQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$FstdSix['42'][] = array($value[6]);
+				$FstdSixQty['42'] = $FstdSixQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$FstdSix['44'][] = array($value[6]);
+				$FstdSixQty['44'] = $FstdSixQty['44'] + $value[9];
 			}
 
 		}
@@ -1264,47 +1316,47 @@ ob_start();
 		
 			 if($value[6] == "24")
 			{
-				$FstdSeven['24'][] = array($value[6]);
+				$FstdSevenQty['24'] = $FstdSevenQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$FstdSeven['26'][] = array($value[6]);
+				$FstdSevenQty['26'] = $FstdSevenQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$FstdSeven['28'][] = array($value[6]);
+				$FstdSevenQty['28'] = $FstdSevenQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$FstdSeven['30'][] = array($value[6]);
+				$FstdSevenQty['30'] = $FstdSevenQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$FstdSeven['32'][] = array($value[6]);
+				$FstdSevenQty['32'] = $FstdSevenQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$FstdSeven['34'][] = array($value[6]);
+				$FstdSevenQty['34'] = $FstdSevenQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$FstdSeven['36'][] = array($value[6]);
+				$FstdSevenQty['26'] = $FstdSevenQty['26'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$FstdSeven['38'][] = array($value[6]);
+				$FstdSevenQty['38'] = $FstdSevenQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$FstdSeven['40'][] = array($value[6]);
+				$FstdSevenQty['40'] = $FstdSevenQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$FstdSeven['42'][] = array($value[6]);
+				$FstdSevenQty['42'] = $FstdSevenQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$FstdSeven['44'][] = array($value[6]);
+				$FstdSevenQty['44'] = $FstdSevenQty['44'] + $value[9];
 			}
 
 		}
@@ -1313,235 +1365,235 @@ ob_start();
 			
 			 if($value[6] == "24")
 			{
-				$FstdEight['24'][] = array($value[6]);
+				$FstdEightQty['24'] = $FstdEightQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$FstdEight['26'][] = array($value[6]);
+				$FstdEightQty['26'] = $FstdEightQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$FstdEight['28'][] = array($value[6]);
+				$FstdEightQty['28'] = $FstdEightQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$FstdEight['30'][] = array($value[6]);
+				$FstdEightQty['30'] = $FstdEightQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$FstdEight['32'][] = array($value[6]);
+				$FstdEightQty['32'] = $FstdEightQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$FstdEight['34'][] = array($value[6]);
+				$FstdEightQty['34'] = $FstdEightQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$FstdEight['36'][] = array($value[6]);
+				$FstdEightQty['36'] = $FstdEightQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$FstdEight['38'][] = array($value[6]);
+				$FstdEightQty['38'] = $FstdEightQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$FstdEight['40'][] = array($value[6]);
+				$FstdEightQty['40'] = $FstdEightQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$FstdEight['42'][] = array($value[6]);
+				$FstdEightQty['42'] = $FstdEightQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$FstdEight['44'][] = array($value[6]);
+				$FstdEightQty['44'] = $FstdEightQty['44'] + $value[9];
 			}
 		}
 		
 		if($value[3] == "9" and $value[5] == "Female") {
 			 if($value[6] == "24")
 			{
-				$FstdNine['24'][] = array($value[6]);
+				$FstdNineQty['24'] = $FstdNineQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$FstdNine['26'][] = array($value[6]);
+				$FstdNineQty['26'] = $FstdNineQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$FstdNine['28'][] = array($value[6]);
+				$FstdNineQty['28'] = $FstdNineQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$FstdNine['30'][] = array($value[6]);
+				$FstdNineQty['30'] = $FstdNineQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$FstdNine['32'][] = array($value[6]);
+				$FstdNineQty['32'] = $FstdNineQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$FstdNine['34'][] = array($value[6]);
+				$FstdNineQty['34'] = $FstdNineQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$FstdNine['36'][] = array($value[6]);
+				$FstdNineQty['36'] = $FstdNineQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$FstdNine['38'][] = array($value[6]);
+				$FstdNineQty['38'] = $FstdNineQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$FstdNine['40'][] = array($value[6]);
+				$FstdNineQty['40'] = $FstdNineQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$FstdNine['42'][] = array($value[6]);
+				$FstdNineQty['42'] = $FstdNineQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$FstdNine['44'][] = array($value[6]);
+				$FstdNineQty['44'] = $FstdNineQty['44'] + $value[9];
 			}
 		}
 		
 		if($value[3] == "10" and $value[5] == "Female") {
 			 if($value[6] == "24")
 			{
-				$FstdTen['24'][] = array($value[6]);
+				$FstdTenQty['24'] = $FstdTenQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$FstdTen['26'][] = array($value[6]);
+				$FstdTenQty['26'] = $FstdTenQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$FstdTen['28'][] = array($value[6]);
+				$FstdTenQty['28'] = $FstdTenQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$FstdTen['30'][] = array($value[6]);
+				$FstdTenQty['30'] = $FstdTenQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$FstdTen['32'][] = array($value[6]);
+				$FstdTenQty['32'] = $FstdTenQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$FstdTen['34'][] = array($value[6]);
+				$FstdTenQty['34'] = $FstdTenQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$FstdTen['36'][] = array($value[6]);
+				$FstdTenQty['36'] = $FstdTenQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$FstdTen['38'][] = array($value[6]);
+				$FstdTenQty['38'] = $FstdTenQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$FstdTen['40'][] = array($value[6]);
+				$FstdTenQty['40'] = $FstdTenQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$FstdTen['42'][] = array($value[6]);
+				$FstdTenQty['42'] = $FstdTenQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$FstdTen['44'][] = array($value[6]);
+				$FstdTenQty['44'] = $FstdTenQty['44'] + $value[9];
 			}
 		}
 		
 		if($value[3] == "11" and $value[5] == "Female") {
 			if($value[6] == "24")
 			{
-				$FstdEleven['24'][] = array($value[6]);
+				$FstdElevenQty['24'] = $FstdElevenQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$FstdEleven['26'][] = array($value[6]);
+				$FstdElevenQty['26'] = $FstdElevenQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$FstdEleven['28'][] = array($value[6]);
+				$FstdElevenQty['28'] = $FstdElevenQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$FstdEleven['30'][] = array($value[6]);
+				$FstdElevenQty['30'] = $FstdElevenQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$FstdEleven['32'][] = array($value[6]);
+				$FstdElevenQty['32'] = $FstdElevenQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$FstdEleven['34'][] = array($value[6]);
+				$FstdElevenQty['34'] = $FstdElevenQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$FstdEleven['36'][] = array($value[6]);
+				$FstdElevenQty['36'] = $FstdElevenQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$FstdEleven['38'][] = array($value[6]);
+				$FstdElevenQty['38'] = $FstdElevenQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$FstdEleven['40'][] = array($value[6]);
+				$FstdElevenQty['40'] = $FstdElevenQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$FstdEleven['42'][] = array($value[6]);
+				$FstdElevenQty['42'] = $FstdElevenQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$FstdEleven['44'][] = array($value[6]);
+				$FstdElevenQty['44'] = $FstdElevenQty['44'] + $value[9];
 			}
 		}
 		
 		if($value[3] == "12" and $value[5] == "Female") {
 			 if($value[6] == "24")
 			{
-				$FstdTwelve['24'][] = array($value[6]);
+				$FstdTwelveQty['24'] = $FstdTwelveQty['24'] + $value[9];
 			}
 			else if($value[6] == "26")
 			{
-				$FstdTwelve['26'][] = array($value[6]);
+				$FstdTwelveQty['26'] = $FstdTwelveQty['26'] + $value[9];
 			}
 			else if($value[6] == "28")
 			{
-				$FstdTwelve['28'][] = array($value[6]);
+				$FstdTwelveQty['28'] = $FstdTwelveQty['28'] + $value[9];
 			}
 			else if($value[6] == "30")
 			{
-				$FstdTwelve['30'][] = array($value[6]);
+				$FstdTwelveQty['30'] = $FstdTwelveQty['30'] + $value[9];
 			}
 			else if($value[6] == "32")
 			{
-				$FstdTwelve['32'][] = array($value[6]);
+				$FstdTwelveQty['32'] = $FstdTwelveQty['32'] + $value[9];
 			}
 			else if($value[6] == "34")
 			{
-				$FstdTwelve['34'][] = array($value[6]);
+				$FstdTwelveQty['34'] = $FstdTwelveQty['34'] + $value[9];
 			}
 			else if($value[6] == "36")
 			{
-				$FstdTwelve['36'][] = array($value[6]);
+				$FstdTwelveQty['36'] = $FstdTwelveQty['36'] + $value[9];
 			}
 			else if($value[6] == "38")
 			{
-				$FstdTwelve['38'][] = array($value[6]);
+				$FstdTwelveQty['38'] = $FstdTwelveQty['38'] + $value[9];
 			}
 			else if($value[6] == "40")
 			{
-				$FstdTwelve['40'][] = array($value[6]);
+				$FstdTwelveQty['40'] = $FstdTwelveQty['40'] + $value[9];
 			}
 			else if($value[6] == "42")
 			{
-				$FstdTwelve['42'][] = array($value[6]);
+				$FstdTwelveQty['42'] = $FstdTwelveQty['42'] + $value[9];
 			}
 			else if($value[6] == "44")
 			{
-				$FstdTwelve['44'][] = array($value[6]);
+				$FstdTwelveQty['44'] = $FstdTwelveQty['44'] + $value[9];
 			}
 		}
 	}
@@ -1580,7 +1632,7 @@ ob_start();
 		}
 		else{
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$FcountOne = count($FstdOne[$FsizeData[$sr]]);
+		$FcountOne = $FstdOneQty[$FsizeData[$sr]];
 		if($FcountOne > 0) { 
 		echo $FcountOne;
 		$Fmsize22 = $Fmsize22 + $FcountOne; 
@@ -1589,28 +1641,28 @@ ob_start();
 		echo "</td>";
 		
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$FcountTwo = count($FstdTwo[$FsizeData[$sr]]);
+		$FcountTwo = $FstdTwoQty[$FsizeData[$sr]];
 		if($FcountTwo > 0) { echo $FcountTwo;
 		$Fmsize24 = $Fmsize24 + $FcountTwo; 
 		} else { echo "-";}
 		echo "</td>";
 		
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$FcountThree = count($FstdThree[$FsizeData[$sr]]);
+		$FcountThree = $FstdThreeQty[$FsizeData[$sr]];
 		if($FcountThree > 0) { echo $FcountThree;
 		$Fmsize26 = $Fmsize26 + $FcountThree; 
 		} else { echo "-";}
 		echo "</td>";
 		
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$FcountFour = count($FstdFour[$FsizeData[$sr]]);
+		$FcountFour = $FstdFourQty[$FsizeData[$sr]];
 		if($FcountFour > 0) { echo $FcountFour;
 		$Fmsize28 = $Fmsize28 + $FcountFour; 
 		} else { echo "-";}
 		echo "</td class='show_chart'>";
 
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$FcountFive = count($FstdFive[$FsizeData[$sr]]);
+		$FcountFive = $FstdFiveQty[$FsizeData[$sr]];
 		if($FcountFive > 0) { echo $FcountFive;
 		$Fmsize30 = $Fmsize30 + $FcountFive;
 		} else { echo "-";}
@@ -1618,49 +1670,49 @@ ob_start();
 		
 		
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$FcountSix = count($FstdSix[$FsizeData[$sr]]);
+		$FcountSix = $FstdSixQty[$FsizeData[$sr]];
 		if($FcountSix > 0) { echo $FcountSix;
 		$Fmsize32 = $Fmsize32 + $FcountSix;
 		} else { echo "-";}
 		echo "</td>";
 
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$FcountSeven = count($FstdSeven[$FsizeData[$sr]]);
+		$FcountSeven = $FstdSevenQty[$FsizeData[$sr]];
 		if($FcountSeven > 0) { echo $FcountSeven;
 		$Fmsize34 = $Fmsize34 + $FcountSeven;
 		} else { echo "-";}
 		echo "</td>";
 		
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$FcountEight = count($FstdEight[$FsizeData[$sr]]);
+		$FcountEight = $FstdEightQty[$FsizeData[$sr]];
 		if($FcountEight > 0) { echo $FcountEight;
 		$Fmsize36 = $Fmsize36 + $FcountEight;
 		} else { echo "-";}
 		echo "</td>";
 		
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$FcountNine = count($FstdNine[$FsizeData[$sr]]);
+		$FcountNine = $FstdNineQty[$FsizeData[$sr]];
 		if($FcountNine > 0) { echo $FcountNine;
 		$Fmsize38 = $Fmsize38 + $FcountNine;
 		} else { echo "-";}
 		echo "</td>";
 		
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$FcountTen = count($FstdTen[$FsizeData[$sr]]);
+		$FcountTen = $FstdTenQty[$FsizeData[$sr]];
 		if($FcountTen > 0) { echo $FcountTen;
 		$Fmsize40 = $Fmsize40 + $FcountTen;
 		} else { echo "-";}
 		echo "</td>";
 		
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$FcountEleven = count($FstdEleven[$FsizeData[$sr]]);
+		$FcountEleven = $FstdElevenQty[$FsizeData[$sr]];
 		if($FcountEleven > 0) { echo $FcountEleven;
 		$Fmsize42 = $Fmsize42 + $FcountEleven;
 		} else { echo "-";}
 		echo "</td>";
 		
 		echo "<td class='show_chart' align='center' style='border:1px solid black;'>";
-		$FcountTwelve = count($FstdTwelve[$FsizeData[$sr]]);
+		$FcountTwelve = $FstdTwelveQty[$FsizeData[$sr]];
 		if($FcountTwelve > 0) { echo $FcountTwelve;
 		$Fmsize44 = $Fmsize44 + $FcountTwelve;
 		} else { echo "-";}
