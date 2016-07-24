@@ -20,6 +20,7 @@
 	$student_name = $data['student_name'];
 	$student_gender = $data['student_gender'];
 	$student_size = $data['student_size'];
+	$student_qty = $data['student_qty'];
 	
 	
 	for($i=1;$i<= $nums_studetns;$i++)
@@ -31,6 +32,7 @@
 		}
 		$gender = $student_gender[$i];
 		$size = $student_size[$i];
+		$qty = $student_qty[$i];
 		$query .= "(".
 						'""'.",".
 					"'". $school_id ."'".",".
@@ -39,6 +41,7 @@
 					"'".	$class ."'" .",".
 					"'".	$division. "'".",".
 					"'".	$gender. "'".",".
+					"'".	$qty. "'".",".
 					"'".	$size."'".",".
 					"'".	$term. "'".",".
 					"'".	'Admin' ."'".",".
@@ -50,7 +53,7 @@
 	$query = substr($query,0,-1);
 	$saveStudent = "INSERT INTO student_details
 				    (id,school_id,student_sr,student_name,
-					 student_class,student_division,student_gender,
+					 student_class,student_division,student_gender,student_qty,
 					 student_size,student_term,createdby,created
 					 )
 					 VALUES

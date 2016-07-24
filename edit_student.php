@@ -13,6 +13,7 @@ if(isset($_POST['update']))
 	$division = $data['student_division'];
 	$gender = $data['student_gender'];
 	$size = $data['student_size'];
+	$qty = $data['student_qty'];
 	$id = $data['student_id'];
 	$query = "Update student_details
 			  set
@@ -21,6 +22,7 @@ if(isset($_POST['update']))
 			  student_class = '$class',
 			  student_division = '$division',
 			  student_gender = '$gender',
+			  student_qty = '$qty',
 			  student_size = '$size'
 			  WHERE
 			  id = '$id'
@@ -123,6 +125,15 @@ function check() {
         </td>
         <td>
         	<input type="text" name="student_gender" value="<?php echo $studentData['student_gender'];?>" />
+        </td>
+    </tr>
+    
+    <tr>
+    	<td align="right">
+        Student Qty :
+        </td>
+        <td>
+        	<input type="text" name="student_qty" value="<?php echo $studentData['student_qty'];?>" />
         </td>
     </tr>
     

@@ -167,6 +167,7 @@ if(isset($_REQUEST['chart'])) {
 					Roll No.</h3></td>
 					<td style='border:1px solid black;'>
 					<h3>Name</h3></td><td style='border:1px solid black;'>
+					<h3>Qty</h3></td><td style='border:1px solid black;'>
 					<h3>Size</h3></td>
 					<td  style='border:1px solid black;'>Edit </td>
 					<td  style='border:1px solid black;'>Delete </td>
@@ -175,13 +176,14 @@ if(isset($_REQUEST['chart'])) {
 	{
 		if(!empty($std[$k]["A"])) {
 			echo "<table align='center' width='80%' border='2'>";
-			echo "<tr><td colspan='5' align='center'><h2>Standard : ".$k." - A</h2></td></tr>";
-			echo "<tr><td colspan='5'><a href='manage_students.php?school_id=".$school_id."&std=".$k."&division=A&term=".$student_term."'>View Details</a></tr>";
+			echo "<tr><td colspan='6' align='center'><h2>Standard : ".$k." - A</h2></td></tr>";
+			echo "<tr><td colspan='6'><a href='manage_students.php?school_id=".$school_id."&std=".$k."&division=A&term=".$student_term."'>View Details</a></tr>";
 			echo $header;
 			foreach($std[$k]["A"] as $myvalA) {
 				echo "<tr>";
 				echo "<td width='30%' style='border:1px solid black;'>".$myvalA[1]."</td>";
 				echo "<td width='50%' style='border:1px solid black;'>".$myvalA[2]."</td>";
+				echo "<td width='50%' style='border:1px solid black;'>".$myvalA[9]."</td>";
 				echo "<td width='20%' style='border:1px solid black;'>".$myvalA[6]."</td>";
 				echo "<td width='20%' style='border:1px solid black;'>
 				<a href='edit_student.php?school_name=".$school_name."&term=".
@@ -199,13 +201,14 @@ if(isset($_REQUEST['chart'])) {
 		
 		if(!empty($std[$k]["B"])) {
 			echo "<table align='center' width='80%' border='2'>";
-			echo "<tr><td colspan='5' align='center'><h2>Standard : ".$k." - B</h2></td></tr>";
-			echo "<tr><td colspan='5'><a href='manage_students.php?school_id=".$school_id."&std=".$k."&division=B&term=".$student_term."'>View Details</a></tr>";
+			echo "<tr><td colspan='6' align='center'><h2>Standard : ".$k." - B</h2></td></tr>";
+			echo "<tr><td colspan='6'><a href='manage_students.php?school_id=".$school_id."&std=".$k."&division=B&term=".$student_term."'>View Details</a></tr>";
 			echo $header;
 			foreach($std[$k]["B"] as $myvalB) {
 				echo "<tr>";
 				echo "<td width='30%' style='border:1px solid black;'>".$myvalB[1]."</td>";
 				echo "<td width='50%' style='border:1px solid black;'>".$myvalB[2]."</td>";
+				echo "<td width='50%' style='border:1px solid black;'>".$myvalB[9]."</td>";
 				echo "<td width='20%' style='border:1px solid black;'>".$myvalB[6]."</td>";
 				echo "<td width='20%' style='border:1px solid black;'>
 				<a href='edit_student.php?school_name=".$school_name."&term=".
@@ -223,13 +226,14 @@ if(isset($_REQUEST['chart'])) {
 		
 		if(!empty($std[$k]["C"])) {
 			echo "<table align='center' width='80%' border='2'>";
-			echo "<tr><td colspan='5' align='center'><h2>Standard : ".$k." - C</h2></td></tr>";
-			echo "<tr><td colspan='5'><a href='manage_students.php?school_id=".$school_id."&std=".$k."&division=C&term=".$student_term."'>View Details</a></tr>";
+			echo "<tr><td colspan='6' align='center'><h2>Standard : ".$k." - C</h2></td></tr>";
+			echo "<tr><td colspan='6'><a href='manage_students.php?school_id=".$school_id."&std=".$k."&division=C&term=".$student_term."'>View Details</a></tr>";
 			echo $header;
 			foreach($std[$k]["C"] as $myvalC) {
 				echo "<tr>";
 				echo "<td width='30%' style='border:1px solid black;'>".$myvalC[1]."</td>";
 				echo "<td width='50%' style='border:1px solid black;'>".$myvalC[2]."</td>";
+				echo "<td width='50%' style='border:1px solid black;'>".$myvalC[9]."</td>";
 				echo "<td width='20%' style='border:1px solid black;'>".$myvalC[6]."</td>";
 				echo "<td width='20%' style='border:1px solid black;'>
 				<a href='edit_student.php?school_name=".$school_name."&term=".
@@ -247,13 +251,14 @@ if(isset($_REQUEST['chart'])) {
 		
 		if(!empty($std[$k]["D"])) {
 			echo "<table align='center' width='80%' border='2'>";
-			echo "<tr><td colspan='5' align='center'><h2>Standard : ".$k." - D</h2></td></tr>";
-			echo "<tr><td colspan='5'><a href='manage_students.php?school_id=".$school_id."&std=".$k."&division=D&term=".$student_term."'>View Details</a></tr>";
+			echo "<tr><td colspan='6' align='center'><h2>Standard : ".$k." - D</h2></td></tr>";
+			echo "<tr><td colspan='6'><a href='manage_students.php?school_id=".$school_id."&std=".$k."&division=D&term=".$student_term."'>View Details</a></tr>";
 			echo $header;
 			foreach($std[$k]["D"] as $myvalD) {
 				echo "<tr>";
 				echo "<td width='30%' style='border:1px solid black;'>".$myvalD[1]."</td>";
 				echo "<td width='50%' style='border:1px solid black;'>".$myvalD[2]."</td>";
+				echo "<td width='50%' style='border:1px solid black;'>".$myvalD[9]."</td>";
 				echo "<td width='20%' style='border:1px solid black;'>".$myvalD[6]."</td>";
 				echo "<td width='20%' style='border:1px solid black;'>
 				<a href='edit_student.php?school_name=".$school_name."&term=".
@@ -271,13 +276,14 @@ if(isset($_REQUEST['chart'])) {
 		
 		if(!empty($std[$k]["E"])) {
 			echo "<table align='center' width='80%' border='2'>";
-			echo "<tr><td colspan='5' align='center'><h2>Standard : ".$k." - E</h2></td></tr>";
-			echo "<tr><td colspan='5'><a href='manage_students.php?school_id=".$school_id."&std=".$k."&division=E&term=".$student_term."'>View Details</a></tr>";
+			echo "<tr><td colspan='6' align='center'><h2>Standard : ".$k." - E</h2></td></tr>";
+			echo "<tr><td colspan='6'><a href='manage_students.php?school_id=".$school_id."&std=".$k."&division=E&term=".$student_term."'>View Details</a></tr>";
 			echo $header;
 			foreach($std[$k]["E"] as $myvalE) {
 				echo "<tr>";
 				echo "<td width='30%' style='border:1px solid black;'>".$myvalE[1]."</td>";
 				echo "<td width='50%' style='border:1px solid black;'>".$myvalE[2]."</td>";
+				echo "<td width='50%' style='border:1px solid black;'>".$myvalE[9]."</td>";
 				echo "<td width='20%' style='border:1px solid black;'>".$myvalE[6]."</td>";
 				echo "<td width='20%' style='border:1px solid black;'>
 				<a href='edit_student.php?school_name=".$school_name."&term=".
