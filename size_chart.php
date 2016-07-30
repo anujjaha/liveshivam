@@ -7,7 +7,16 @@
     	<td width="50%" align="center">
         	<a href="school_chart.php">
             	<h2>
-                Generate Chart
+                Generate School Chart
+                </h2>
+            </a>
+        </td>
+    </tr>
+    <tr>	
+    	<td width="50%" align="center">
+        	<a href="school_packing_chart.php">
+            	<h2>
+                Generate Packing Chart
                 </h2>
             </a>
         </td>
