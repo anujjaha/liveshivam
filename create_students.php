@@ -54,9 +54,9 @@ function check()
             	<tr>
                 	<td width="10%">Roll Number</td>
                     <td width="40%">Student Name</td>
-                    <td width="20%">Qty</td>
                     <td width="15%">Gender</td>
                     <td width="15%">Size</td>
+                    <td width="20%">Qty</td>
                 </tr>
        </table>
        </td>
